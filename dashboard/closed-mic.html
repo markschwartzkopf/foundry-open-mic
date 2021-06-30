@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<style>
+		.container {
+			display: flex;
+			justify-content: space-around;
+			width: 24em;
+			padding: .2em;
+		}
+
+		.input-text {
+			margin: .2em;
+		}
+
+		.social-options {
+			margin: .2em;
+		}
+
+		hr {
+			width: 24em;
+			display: inline-block;
+		}
+
+		.header {
+			width: 20em;
+			text-align: center;
+			font-size: x-large;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<button id="webcam">Webcam Primary</button>
+		<button id="pair">Pair</button>
+		<button id="hangouts">Hangouts Primary</button>
+	</div>
+	<hr>
+	<div style="background-color: black; width: 24em;">
+		<div class="header">Lower Third</div>
+		Name:<br>
+		<input class="input-text" id="name"><br><br>
+		Social Media:<br>
+		<div id="social-container"></div>
+		<div class="container">
+			<button id="submit">Submit</button>
+			<button id="add">+</button><button id="subtract">-</button>
+			<button id="clear">Clear</button>
+		</div>
+		
+	</div>
+	<hr>
+	<div class="container">
+		<button id="l3-in">Lower third in</button>
+		<button id="l3-out">Lower third out</button>
+	</div>
+	<hr>
+	<script src="closed-mic.js"></script>
+</body>
+
+</html>

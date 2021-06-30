@@ -1,0 +1,63 @@
+{
+	"Instagram": {
+		"src": "social-media1.png",
+		"style": {
+			"height": "220px",
+			"left": "-118px",
+			"top": "-37px"
+		}
+	},
+	"Twitter": {
+		"src": "twitter.png",
+		"style": {
+			"height": "45px",
+			"left": "0px",
+			"top": "0px"
+		}
+	},
+	"Venmo": {
+		"src": "venmo.png",
+		"style": {
+			"height": "36px",
+			"width": "36px",
+			"objectFit": "cover",
+			"borderRadius": "7px",
+			"left": "4px",
+			"top": "4px"
+		}
+	},
+	"Bandcamp": {
+		"src": "bandcamp.png",
+		"style": {
+			"height": "27px",
+			"left": "0px",
+			"top": "3px",
+			"filter": "invert(1)"
+		}
+	},
+	"Spotify": {
+		"src": "spotify.png",
+		"style": {
+			"height": "35px",
+			"left": "5px",
+			"top": "5px"
+		}
+	},
+	"Soundcloud": {
+		"src": "soundcloud.png",
+		"style": {
+			"height": "45px",
+			"width": "39px",
+			"left": "5px",
+			"top": "1px"
+		}
+	},
+	"Youtube": {
+		"src": "youtube.png",
+		"style": {
+			"height": "60px",
+			"left": "-15px",
+			"top": "-8px"
+		}
+	}
+}

@@ -1,0 +1,72 @@
+{
+  "name": "foundry-closed-mic",
+  "version": "0.0.0",
+  "description": "Broadcast graphics for Foundry closed mic streams",
+  "homepage": "",
+  "author": {
+    "name": "Mark Schwartzkopf",
+    "email": "mark@schwartzkopf.org"
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^1.1.1",
+    "dashboardPanels": [
+      {
+        "name": "closed-mic",
+        "title": "Closed Mic Dashboard",
+        "width": 3,
+        "file": "closed-mic.html",
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "obs",
+        "title": "OBS Control",
+        "width": 3,
+        "file": "OBS.html",
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "popout",
+        "title": "Popout",
+        "width": 3,
+        "file": "popout.html",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "index.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "background.html",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "assetCategories": [
+      {
+        "name": "social-icons",
+        "title": "Social Icons",
+        "allowedTypes": ["jpg", "jpeg", "gif", "png"]
+      }
+    ]
+  },
+  "repository": "https://github.com/nodecg/nodecg.git",
+  "license": "MIT",
+  "dependencies": {
+    "bower-npm-resolver": "^0.10.0",
+    "eslint": "^6.8.0",
+    "nodecg-utility-obs": "^6.1.5"
+  }
+}

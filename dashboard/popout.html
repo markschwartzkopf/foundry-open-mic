@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<style>
+        body {
+            white-space: nowrap;
+        }        
+        input {
+            width: 26em;
+        }
+	</style>
+</head>
+<body>
+    <div>
+        <span>URL:</span><input id="url" type="text">
+    </div><br>
+    
+    <button id="presetButton">Popout control dashboard</button> <button id="submitButton">Popout URL^</button>
+    <button id="chat">Popout Restream chat</button>
+        
+	<script>        
+        document.querySelector('#submitButton').onclick = () => {
+            window.open(document.querySelector('#url').value, "_blank", "toolbar=no, scrollbars=yes, menubar=no, resizable=yes, width=420, height=130");
+            
+        };
+        document.querySelector('#chat').onclick = () => {
+            window.open('https://chat.restream.io/embed?token=75ceb11a-eb3f-4bdf-8e36-24eb939824bf', "_blank", "toolbar=no, scrollbars=yes, menubar=no, resizable=yes, width=420, height=130");
+            
+        };
+        document.querySelector('#presetButton').onclick = () => {
+            window.open('http://localhost:9090/bundles/foundry-closed-mic/dashboard/closed-mic.html?standalone=true', "Control", "toolbar=no, scrollbars=yes, menubar=no, resizable=yes, width=430, height=460, left=840, top=0");
+          
+        };        
+	</script>
+    
+</body>
+</html>

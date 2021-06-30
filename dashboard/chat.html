@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+        <iframe frameborder="0" scrolling="no" id="chat_embed"
+                src="https://chat.restream.io/embed?token=75ceb11a-eb3f-4bdf-8e36-24eb939824bf" height="400" width=100%>
+        </iframe>
+</body>
+
+<script>
+        var myiFrame
+        var doc
+        document.getElementById('chat_embed').onload = function () {
+                myiFrame = document.getElementById("chat_embed");
+                doc = myiFrame.contentDocument;
+                doc.body.innerHTML = doc.body.innerHTML + '<style>.message-text {font-size: 1.5em !important;}</style>';
+        }
+</script>
+
+</html>

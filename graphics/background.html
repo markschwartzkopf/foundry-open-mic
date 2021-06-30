@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<style>
+		body {
+			background-image: url("gradient.jpg");
+			background-color: skyblue;
+			height: 720px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			font-family: "Helvetica", sans-serif;
+			overflow: hidden;
+		}
+
+		#box1,
+		#box2 {
+			height: 357px;
+			width: 634px;
+			background-color: black;
+			outline: #777777;
+			outline-style: solid;
+			outline-width: 4px;
+			position: absolute;
+			transform: translateY(-50%);
+			top: 50%;
+		}
+
+		#box1 {
+			left: 4px;
+		}
+
+		#box2 {
+			right: 4px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="box1"></div>
+	<div id="box2"></div>
+	<script src="background.js"></script>
+</body>
+
+</html>

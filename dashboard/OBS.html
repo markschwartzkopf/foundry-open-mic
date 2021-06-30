@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style>
+		body {
+			/*white-space: nowrap;*/
+			text-align: center;
+		}
+		.container {
+			display: flex;
+			justify-content: space-between;
+			width: 24em;
+		}
+		button {
+			position: relative;
+			transform: translate(0%, -50%);
+			top: 50%;
+			width: min-content;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<span class="container">
+		<span style="float: left">
+			<button id="connectButton">Connect</button>
+		</span>
+		<span id="status" style="background-color: white; color: black; padding: .5em;">
+		</span>
+		<span style="float: right">
+			<button id="disconnectButton">Disconnect</button>
+		</span>
+	</span><br>
+	<span id="OBSerror" style="color: red; position: absolute; left: .5em; width: 24em;"></span>
+	<br>
+	<div style="width: 24em">Hangout display control:</div>
+	<div class="container">
+		<span>
+			<button id="web-save">Save Webcam On Locations</button>
+		</span>
+		<span>
+			<button id="pair-save">Save Pair Locations</button>
+		</span>
+		<span>
+			<button id="hang-save">Save Hangout on Locations</button>
+		</span>
+		<span>
+			<button id="reset">Reset Location Saves</button>
+		</span>
+	</div>
+	<script src="OBS.js"></script>
+</body>
+</html>
